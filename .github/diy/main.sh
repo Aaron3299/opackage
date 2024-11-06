@@ -16,25 +16,20 @@ function mvdir() {
 mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
-#git clone --depth 1 https://github.com/kenzo78/my-packages && mvdir my-packages
-#git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
 #git clone --depth 1 https://github.com/kiddin9/aria2
-#git clone --depth 1 https://github.com/kiddin9/luci-app-baidupcs-web
-#git clone --depth 1 https://github.com/kiddin9/qBittorrent-Enhanced-Edition
-#git clone --depth 1 https://github.com/kiddin9/autoshare && mvdir autoshare
-#git clone --depth 1 https://github.com/kiddin9/openwrt-openvpn && mvdir openwrt-openvpn
-#git clone --depth 1 https://github.com/kiddin9/luci-app-xlnetacc
-#git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
-git clone --depth 1 https://github.com/kenzok78/luci-app-adguardhome
-git clone --depth 1 https://github.com/ZeaKyX/luci-app-speedtest-web
-git clone --depth 1 https://github.com/ZeaKyX/speedtest-web
-#git clone --depth 1 https://github.com/muink/luci-app-homeproxy
-git clone --depth 1 https://github.com/ximiTech/luci-app-msd_lite
 #git clone --depth 1 https://github.com/sbwml/luci-app-qbittorrent openwrt-qb && mv -n openwrt-qb/* ./ ; rm -rf openwrt-qb
 #git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 passwall2 && mv -n passwall2/luci-app-passwall2 ./;rm -rf passwall2
 #git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall passwall1 && mv -n passwall1/luci-app-passwall  ./; rm -rf passwall1
-git clone --depth 1 https://github.com/immortalwrt/packages && mv -n packages/net/{vsftpd,transmission} ./ ; rm -rf packages
-git clone --depth 1 https://github.com/immortalwrt/luci && mv -n luci/applications/{luci-app-vlmcsd,luci-app-transmission} ./ ; rm -rf luci
+#git clone --depth 1 https://github.com/kenzok78/luci-app-adguardhome
+git clone --depth 1 https://github.com/ZeaKyX/luci-app-speedtest-web
+git clone --depth 1 https://github.com/ZeaKyX/speedtest-web
+git clone --depth 1 https://github.com/ximiTech/luci-app-msd_lite
+git clone --depth 1 https://github.com/kiddin9/webd
+git clone --depth 1 https://github.com/kiddin9/luci-app-webd
+git clone --depth 1 https://github.com/kiddin9/adguardhome
+git clone --depth 1 https://github.com/kiddin9/luci-app-adguardhome
+git clone --depth 1 https://github.com/immortalwrt/packages && mv -n packages/net/{transmission-web-control,transmission} ./ ; rm -rf packages
+git clone --depth 1 https://github.com/immortalwrt/luci && mv -n luci/applications/{luci-app-transmission} ./ ; rm -rf luci
 
 find . -type f -name "update.sh" -exec rm -f {} \;
 rm -rf adguardhome/patches
