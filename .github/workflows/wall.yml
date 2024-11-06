@@ -44,6 +44,7 @@ jobs:
         chmod +x .github/diy/${{matrix.target}}.sh
         git clone -b ${{matrix.target}} https://github.com/Aaron3299/opackage.git ${{matrix.target}}
         cd ${{matrix.target}}
+        rm -Rf *
         git rm -r --cache * >/dev/null 2>&1 &
         rm -rf `find ./* -maxdepth 0 -type d ! -name "diy"` >/dev/null 2>&1
         $GITHUB_WORKSPACE/.github/diy/${{matrix.target}}.sh
