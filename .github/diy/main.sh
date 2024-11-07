@@ -25,7 +25,7 @@ rm -rf $1
 #git clone --depth 1 https://github.com/immortalwrt/luci && mv -n luci/applications/{luci-app-msd_lite,luci-app-transmission} ./ ; rm -rf luci
 #git clone --depth 1 https://github.com/immortalwrt/packages && mv -n packages/net/{msd_lite,transmission-web-control,transmission} ./ ; rm -rf packages
 #git clone --depth 1 https://github.com/kiddin9/kwrt-packages && mv -n kwrt-packages/luci-app-bypass ./ ; rm -rf kwrt-packages
-git clone --depth 1 https://github.com/kenzok8/small-package && mv -n small-package/{luci-app-transmission,transmission-web-control,transmission,luci-app-gowebdav} ./ ; rm -rf small-package
+git clone --depth 1 https://github.com/kenzok8/small-package && mv -n small-package/{luci-app-gowebdav,transmission-web-control,transmission,luci-app-transmission} ./ ; rm -rf small-package
 find . -type f -name "update.sh" -exec rm -f {} \;
 exit 0
 find . -type f -name "update.sh" -exec rm -f {} \;
