@@ -20,9 +20,6 @@ rm -rf $1
 #git clone --depth 1 https://github.com/ximiTech/msd_lite
 #git clone --depth 1 https://github.com/immortalwrt/luci && mv -n luci/applications/{luci-app-msd_lite,luci-app-transmission} ./ ; rm -rf luci
 #git clone --depth 1 https://github.com/immortalwrt/packages && mv -n packages/net/{msd_lite,transmission-web-control,transmission} ./ ; rm -rf packages
-git clone --depth 1 https://github.com/kenzok8/openwrt-packages && mv -n openwrt-packages/{smartdns,luci-app-smartdns} ./ ; rm -rf openwrt-packages
+git clone --depth 1 https://github.com/kenzok8/openwrt-packages && mv -n openwrt-packages/{smartdns,luci-app-smartdns} ./opackage ; rm -rf openwrt-packages
 find . -type f -name "update.sh" -exec rm -f {} \;
-exit 0
-find . -type f -name "update.sh" -exec rm -f {} \;
-rm -rf adguardhome/patches
 exit 0
